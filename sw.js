@@ -17,7 +17,7 @@ const cleanCache = (cacheName, limitItems) => {
 self.addEventListener('install', (event) => {
   const respCache = caches.open(STATIC_CACHE_NAME).then((cache) => {
     return cache.addAll([
-     '/',
+     '/pouchdb/',
       '/pouchdb/index.html',
       '/pouchdb/style/base.css',
       '/pouchdb/style/bg.png',
