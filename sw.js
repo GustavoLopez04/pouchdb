@@ -17,12 +17,17 @@ const cleanCache = (cacheName, limitItems) => {
 self.addEventListener('install', (event) => {
   const respCache = caches.open(STATIC_CACHE_NAME).then((cache) => {
     return cache.addAll([
-      '/',
-      '/index.html',
-      '/style/base.css',
-      '/style/bg.png',
-      '/style/plain_sign_in_blue.png',
-      '/-pwa-gustavo/images/icons/android-launchericon-96-96.png',
+     '/',
+      '/pouchdb/index.html',
+      '/pouchdb/style/base.css',
+      '/pouchdb/style/bg.png',
+      '/pouchdb/style/plain_sign_in_blue.png',
+      '/pouchdb/images/icons/android-launchericon-72-72.png',
+      '/pouchdb/images/icons/android-launchericon-96-96.png',
+      '/pouchdb/images/icons/android-launchericon-144-144.png',
+      '/pouchdb/images/icons/android-launchericon-192-192.png',
+      '/pouchdb/images/icons/android-launchericon-512-512.png',
+      '/pouchdb/manifest.json',
     ]);
   });
   const respCacheInmutable = caches.open(INMUTABLE_CACHE_NAME).then((cache) => {
