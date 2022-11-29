@@ -1,7 +1,7 @@
 
 
    if(navigator.serviceWorker){
-    navigator.serviceWorker.register('/sw.js').then(function(reg){
+    navigator.serviceWorker.register('/pouchdb/sw.js').then(function(reg){
       console.log('Service Worker Registered', reg);
     });
   }
