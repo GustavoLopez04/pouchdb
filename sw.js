@@ -1,6 +1,7 @@
 const STATIC_CACHE_NAME = 'static-cache-v1.2';
 const INMUTABLE_CACHE_NAME = 'inmutable-cache-v1.1';
 const DYNAMIC_CACHE_NAME = 'dynamic-cache-v1.1';
+const ROOT_PATH = "pouchdb"
 
 
 const cleanCache = (cacheName, limitItems) => {
